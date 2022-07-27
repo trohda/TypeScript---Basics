@@ -9,3 +9,11 @@ function printResult(num: number) {
 }
 
 printResult(add(5, 12));
+
+let combineValues: (a: number, b: number) => number;
+
+combineValues = add;
+// combineValues = printResult;  !!!ERROR!!!
+// combineValues = 5;  !!!ERROR!!!
+
+console.log(combineValues(8, 8));
