@@ -1,6 +1,14 @@
+//Type Aliases custom type
+type Combinable = number | string;
+
+//Type Aliases object type
+type User = { name: string; age: number };
+
+const u1: User = { name: "Max", age: 30 };
+
 function combine(
-  input1: number | string,
-  input2: number | string,
+  input1: Combinable,
+  input2: Combinable,
   resultConversion: "as-number" | "as-text"
 ) {
   let result;
